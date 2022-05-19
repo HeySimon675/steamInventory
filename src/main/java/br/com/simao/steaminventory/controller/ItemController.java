@@ -1,6 +1,6 @@
 package br.com.simao.steaminventory.controller;
 
-import br.com.simao.steaminventory.domain.item.Item;
+import br.com.simao.steaminventory.core.item.Item;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
