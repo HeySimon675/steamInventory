@@ -1,4 +1,4 @@
-package br.com.simao.steaminventory.controller;
+package br.com.simao.steaminventory.api;
 
 import br.com.simao.steaminventory.core.item.Item;
 import org.springframework.http.ResponseEntity;
