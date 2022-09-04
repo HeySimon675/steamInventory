@@ -2,9 +2,13 @@ version: '3'
 
 services:
 
-  mysql-development:
+  steam-inv:
     image: mysql:8.0.17
+    volumes:
+      - "~/config/mysqldocker.conf:/etc/mysql/conf.d/config-file.cnf"
+      - "~/estudos/steam-inv-db :/var/lib/mysql:rw"
     environment:
+#      MYSQL_ROOT_HOST: 172.18.0.1
       MYSQL_ROOT_PASSWORD: sih-simao
       MYSQL_DATABASE: steam-inv-db
     ports:
