@@ -4,28 +4,14 @@ import br.com.simao.steaminventory.core.item.Item;
 
 public class ItemBuilder {
 
-    private static final int TAMANHO_MAX_NOME = 50;
     private String codigo;
     private String nome;
 
     public Item build() {
-        //todo Criar ValidadorItem, para centralizar a validação independente da chamada (cadastro/alteracao)
-        if(!isNomeValido())
-            throw new RuntimeException("Nome inválido para Item");
+        Item item = new Item(nome, codigo);
+        new ValidadorItem().validaItem(item);
 
-        return new Item(nome, codigo);
-    }
-
-    private boolean isNomeValido() {
-        if (nome == null) {
-            return false;
-        }
-
-        return isNomeDeTamanhoValido();
-    }
-
-    private boolean isNomeDeTamanhoValido() {
-        return nome.length() <= TAMANHO_MAX_NOME;
+        return item;
     }
 
     public void setCodigo(String codigo) {

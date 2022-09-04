@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: development
+  application:
+    name: steamInventory
+  datasource:
+    url: jdbc:mysql://localhost:3308/steam-inv-db
+    username: root
+    password: steam-inv-db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: true
+    database: mysql
