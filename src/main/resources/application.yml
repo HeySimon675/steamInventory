@@ -1,6 +1,4 @@
 spring:
-  profiles:
-    active: development
   application:
     name: steamInventory
   datasource:
@@ -14,3 +12,11 @@ spring:
     open-in-view: false
     show-sql: true
     database: mysql
+
+---
+spring:
+  config:
+    activate:
+      on-profile: CLI
+  main:
+    web-application-type: none
