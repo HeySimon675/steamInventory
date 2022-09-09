@@ -1,29 +1,30 @@
 package br.com.simao.steaminventory.runner;
 
-import br.com.simao.steaminventory.service.item.ItemService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import picocli.CommandLine.Option;
 
-import java.util.concurrent.Callable;
-
+import static br.com.simao.steaminventory.runner.Exitcode.success;
 import static picocli.CommandLine.Command;
 
 @Component
-@Command(name = "SteamInventoryManagerCLI", mixinStandardHelpOptions = true, version = "0.1.1", description = "Manage your skin inventory with style")
-public class InventoryCommand implements Callable<Integer> {
+@Command(name = "SteamInventoryManagerCLI", mixinStandardHelpOptions = true, version = "0.2.1", description = "Manage your skin inventory")
+public class InventoryCommand extends AbstractCommand {
 
-    @Option(names = {"-a", "--"},
-    paramLabel = "HELP", description = "Quick guide to use", required = true)
-    String option;
+    @Option(names = {"-a", "--alo"}, description = "Alo alo alo")
+    private boolean alo;
 
-    @Autowired
-    private ItemService itemService;
+    @Option(names = {"-m", "--madu"}, description = "maduuuu")
+    private boolean madu;
 
     @Override
     public Integer call() {
-
-        System.out.println("Executando opção -a: " + this.option);
-        return 0;
+        String opcao = "";
+        if(alo)
+            opcao += "alo ";
+        if(madu) {
+            opcao += "madu ";
+        }
+        System.out.println("Comandos: " + opcao);
+        return success.code;
     }
 }
