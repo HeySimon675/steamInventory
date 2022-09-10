@@ -10,7 +10,7 @@ import static br.com.simao.steaminventory.cli.runner.Exitcode.invalid_command;
 @Command
 public abstract class AbstractCommand implements Callable<Integer> {
 
-    @Option(names = {"-e", "--exit"}, description = "finaliza aplicação")
+    @Option(names = {"-x", "--exit"}, description = "finaliza aplicação")
     private boolean exit;
 
     @Override
