@@ -1,8 +1,6 @@
-package br.com.simao.steaminventory.core.transacao;
+package br.com.simao.steaminventory.core;
 
-import br.com.simao.steaminventory.core.Entidade;
-import br.com.simao.steaminventory.core.item.Item;
-import br.com.simao.steaminventory.core.usuario.Usuario;
+import br.com.simao.steaminventory.item.Item;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;

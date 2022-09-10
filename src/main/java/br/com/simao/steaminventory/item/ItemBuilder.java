@@ -1,6 +1,4 @@
-package br.com.simao.steaminventory.service.item;
-
-import br.com.simao.steaminventory.core.item.Item;
+package br.com.simao.steaminventory.item;
 
 public class ItemBuilder {
 

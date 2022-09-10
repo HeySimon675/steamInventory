@@ -1,7 +1,5 @@
-package br.com.simao.steaminventory.service.item;
+package br.com.simao.steaminventory.item;
 
-import br.com.simao.steaminventory.core.item.Item;
-import br.com.simao.steaminventory.repository.ItemRepository;
 import org.springframework.stereotype.Service;
 
 @Service

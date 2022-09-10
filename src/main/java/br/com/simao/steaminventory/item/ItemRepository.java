@@ -1,6 +1,5 @@
-package br.com.simao.steaminventory.repository;
+package br.com.simao.steaminventory.item;
 
-import br.com.simao.steaminventory.core.item.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ItemRepository extends JpaRepository<Item, Integer> {

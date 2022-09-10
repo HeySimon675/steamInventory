@@ -1,6 +1,4 @@
-package br.com.simao.steaminventory.core.usuario;
-
-import br.com.simao.steaminventory.core.Entidade;
+package br.com.simao.steaminventory.core;
 
 import javax.persistence.Entity;
 

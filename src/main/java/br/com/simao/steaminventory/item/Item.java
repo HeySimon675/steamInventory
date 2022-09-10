@@ -1,4 +1,4 @@
-package br.com.simao.steaminventory.core.item;
+package br.com.simao.steaminventory.item;
 
 import br.com.simao.steaminventory.core.Entidade;
 
