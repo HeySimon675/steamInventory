@@ -1,6 +1,6 @@
 package br.com.simao.steaminventory.core;
 
-import br.com.simao.steaminventory.item.Item;
+import br.com.simao.steaminventory.core.item.Item;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;

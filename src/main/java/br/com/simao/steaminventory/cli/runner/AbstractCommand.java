@@ -1,11 +1,11 @@
-package br.com.simao.steaminventory.runner;
+package br.com.simao.steaminventory.cli.runner;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
 import java.util.concurrent.Callable;
 
-import static br.com.simao.steaminventory.runner.Exitcode.invalid_command;
+import static br.com.simao.steaminventory.cli.runner.Exitcode.invalid_command;
 
 @Command
 public abstract class AbstractCommand implements Callable<Integer> {

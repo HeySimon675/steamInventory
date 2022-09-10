@@ -1,4 +1,4 @@
-package br.com.simao.steaminventory.item;
+package br.com.simao.steaminventory.core.item;
 
 public class ValidadorItem {
 

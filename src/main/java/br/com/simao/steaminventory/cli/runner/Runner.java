@@ -1,5 +1,6 @@
-package br.com.simao.steaminventory.runner;
+package br.com.simao.steaminventory.cli.runner;
 
+import br.com.simao.steaminventory.cli.command.InventoryCommand;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.stereotype.Component;

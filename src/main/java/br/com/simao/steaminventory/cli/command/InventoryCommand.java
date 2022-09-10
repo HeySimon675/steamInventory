@@ -1,13 +1,17 @@
-package br.com.simao.steaminventory.runner;
+package br.com.simao.steaminventory.cli.command;
 
+import br.com.simao.steaminventory.cli.runner.AbstractCommand;
 import org.springframework.stereotype.Component;
 import picocli.CommandLine.Option;
 
-import static br.com.simao.steaminventory.runner.Exitcode.success;
+import static br.com.simao.steaminventory.cli.runner.Exitcode.success;
 import static picocli.CommandLine.Command;
 
 @Component
-@Command(name = "SteamInventoryManagerCLI", mixinStandardHelpOptions = true, version = "0.2.1", description = "Manage your skin inventory")
+@Command(name = "SteamInventoryManagerCLI",  version = "0.2.1", description = "Manage your skin inventory", mixinStandardHelpOptions = true,
+    subcommands = {
+        ItemCommand.class
+    })
 public class InventoryCommand extends AbstractCommand {
 
     @Option(names = {"-a", "--alo"}, description = "Alo alo alo")

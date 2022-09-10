@@ -1,4 +1,4 @@
-package br.com.simao.steaminventory.runner;
+package br.com.simao.steaminventory.cli.runner;
 
 public enum Exitcode {
 
@@ -6,7 +6,7 @@ public enum Exitcode {
     error(1),
     invalid_command(2);
 
-    final int code;
+    public final int code;
 
     Exitcode(int code) {
         this.code = code;
